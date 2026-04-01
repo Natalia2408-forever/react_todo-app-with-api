@@ -54,7 +54,7 @@ export const Footer: React.FC<Props> = ({
             key={f.value}
             href={f.href}
             data-cy={f.dataCy}
-            className={classNames('filter-link', {
+            className={classNames('filter__link', {
               selected: selected === f.value,
             })}
             onClick={() => setSelected(f.value)}

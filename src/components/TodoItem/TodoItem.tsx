@@ -95,7 +95,7 @@ export const TodoItem: React.FC<Props> = ({
             ref={editFieldRef}
             data-cy="TodoTitleField"
             type="text"
-            className="todo__edit"
+            className="todo__title-field"
             value={newTitle}
             onChange={event => setNewTitle(event.target.value)}
             onBlur={handleSubmit}

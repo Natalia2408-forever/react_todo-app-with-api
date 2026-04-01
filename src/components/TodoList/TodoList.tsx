@@ -29,16 +29,6 @@ export const TodoList: React.FC<Props> = ({
           onUpdate={onUpdate}
         />
       ))}
-
-      {/*{tempTodo && (
-        <TodoItem
-          key={tempTodo.id}
-          todo={tempTodo}
-          isProcessed={true}
-          onDelete={() => {}}
-          onUpdate={() => Promise.resolve()}
-        />
-      )}*/}
     </section>
   );
 };

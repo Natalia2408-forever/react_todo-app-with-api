@@ -48,7 +48,6 @@ export const App: React.FC = () => {
       setErrorMessage(ErrorMessage.DeleteTodo);
     } finally {
       setProcessings(prev => prev.filter(id => id !== todoId));
-      /*focusInput();*/
     }
   }
 
@@ -89,9 +88,6 @@ export const App: React.FC = () => {
     } finally {
       setTempTodo(null);
       setProcessings(prev => prev.filter(id => id !== tempId));
-      /*setTimeout(() => {
-        focusInput();
-      }, 0);*/
     }
   }
 
@@ -113,14 +109,11 @@ export const App: React.FC = () => {
       throw error;
     } finally {
       setProcessings(prev => prev.filter(id => id !== updatedTodo.id));
-
-      /*focusInput();*/
     }
   }
 
   const handleToggleAll = () => {
     const allCompleted = todos.every(todo => todo.completed);
-    /*const targetStatus = !allCompleted;*/
     const todosToUpdate = todos.filter(
       todo => todo.id > 0 && todo.completed === allCompleted,
     );
